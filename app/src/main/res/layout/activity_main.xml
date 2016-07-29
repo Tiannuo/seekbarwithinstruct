@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+
+    tools:context="com.tikou.seekbarwithinstruct.MainActivity">
+
+    <com.tikou.mylibrary.UiSeeKBar
+        android:id="@+id/ui_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progressDrawable="@drawable/seek"
+        android:maxHeight="20px"
+        android:thumb="@drawable/year_line_lv_03"
+        custom:numbackground="@drawable/shows"
+        custom:numType="bottom"
+        />
+
+
+
+</RelativeLayout>

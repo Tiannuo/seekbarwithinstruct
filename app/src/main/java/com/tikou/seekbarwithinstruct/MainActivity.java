@@ -2,13 +2,11 @@ package com.tikou.seekbarwithinstruct;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Gravity;
-import android.widget.ImageView;
-import android.widget.TextView;
+
 
 import com.tikou.mylibrary.UiSeeKBar;
 
-import org.w3c.dom.Text;
+
 
 public class MainActivity extends AppCompatActivity {
     UiSeeKBar uiSeeKBar;

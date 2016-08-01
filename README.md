@@ -14,6 +14,8 @@ QQ： 1320917731
 ## 1.用法
 Android studio在gradle可以选择添加或者copy源码：
 
+compile 'com.tikou:seekbarwithinstruct:1.0.0
+
 
 ## 2.使用方式参数说明
 ## Attributes

@@ -18,6 +18,8 @@
         custom:numType="top"
         custom:numTextColor="#FFFFFF"
         custom:numScale="0.16"
+        android:splitTrack="false"
+        custom:numTextFormat="元"
         />
 
     <com.tikou.mylibrary.UiSeeKBar
@@ -31,8 +33,13 @@
         custom:numbackground="@mipmap/qqshow_2"
         custom:numType="bottom"
         custom:numTextColor="#FFFFFF"
-        custom:numScale="0.16"
+
+        android:splitTrack="false"
         />
+
+    <com.tikou.mylibrary.UiSeeKBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 
 </LinearLayout>

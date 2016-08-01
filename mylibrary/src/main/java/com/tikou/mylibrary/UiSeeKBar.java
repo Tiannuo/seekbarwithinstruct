@@ -25,7 +25,9 @@ import android.widget.SeekBar;
  */
 public class UiSeeKBar extends SeekBar{
 
-    //进度条指示文字
+    //进度条指示文字后缀
+    private String numTextFormat="%";
+
     private String numText;
     //进度条指示文字的大小吗默认20px
     private int numTextSize=20;
@@ -49,7 +51,7 @@ public class UiSeeKBar extends SeekBar{
     private int type=Gravity.TOP;
     private Paint.FontMetrics fm;
     //特别说明这个scale比例是滑动的指示器小箭头部分占全部图片的比列，为了使其文字完全居中
-    private double numScale;
+    private double numScale=0.16;
 
 
 
@@ -101,8 +103,11 @@ public class UiSeeKBar extends SeekBar{
     @Override
     protected synchronized void onDraw(Canvas canvas) {
         super.onDraw(canvas);
+        try {
+
+
         fm=bmPaint.getFontMetrics();
-        numText=(getProgress()*100/getMax())+"%";
+        numText=(getProgress()*100/getMax())+numTextFormat;
         numTextWidth=bmPaint.measureText(numText);
 
         rect_seek=this.getProgressDrawable().getBounds();
@@ -140,7 +145,9 @@ public class UiSeeKBar extends SeekBar{
         }
 
         //设置文本的位置
-
+        }catch (Exception e){
+            //为什么要try因为你的参数可能没有填
+        }
 
 
 
@@ -171,15 +178,20 @@ public class UiSeeKBar extends SeekBar{
 
     private void init(Context context, AttributeSet attrs) {
         TypedArray array=context.obtainStyledAttributes(attrs,R.styleable.CustomSeekBar);
-        numText=array.getString(R.styleable.CustomSeekBar_numText);
+        numTextFormat=array.getString(R.styleable.CustomSeekBar_numTextFormat);
         numbackground=array.getResourceId(R.styleable.CustomSeekBar_numbackground,R.drawable.shows);
         numTextSize=array.getDimensionPixelSize(R.styleable.CustomSeekBar_numTextSize, (int) TypedValue.applyDimension(
                 TypedValue.COMPLEX_UNIT_SP, 16, getResources().getDisplayMetrics()));
         numTextColor=array.getColor(R.styleable.CustomSeekBar_numTextColor, Color.WHITE);
         type=array.getInt(R.styleable.CustomSeekBar_numType, Gravity.TOP);
-        numScale=Double.parseDouble(array.getString(R.styleable.CustomSeekBar_numScale));
 
-        Log.i("====",type+"type");
+        numScale=Double.parseDouble(array.getString(R.styleable.CustomSeekBar_numScale)==null?numScale+"":array.getString(R.styleable.CustomSeekBar_numScale));
+        numTextFormat=numTextFormat==null?"%":numTextFormat;
+
+
+
+
+
         array.recycle();
     }
 

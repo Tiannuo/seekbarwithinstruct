@@ -8,3 +8,19 @@ QQ： 1320917731
 
 
 演示
+
+
+## 1.用法
+Android studio在gradle可以选择添加或者copy源码：
+
+
+## 2.使用方式参数说明
+## Attributes
+| name | format | description |
+| -----|:----:| ----:|
+| numbackground    | reference    | 设置指示器背景的资源文件    |
+| numTextSize    | dimension    |  设置指示器内部文字的大小   |
+| numTextColor    | color    |   设置指示器内部文字的颜色  |
+| numScale    | string    |   设置指示器背景资源文件的箭头和整个图片高的的比例  |
+| numType    | enum    |   设置指示器在seekbar的上面还是下面  |
+

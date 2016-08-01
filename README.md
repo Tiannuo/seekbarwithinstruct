@@ -17,7 +17,7 @@ Android studio在gradle可以选择添加或者copy源码：
 
 
 ```java
-compile 'com.tikou:seekbarwithinstruct:1.0.0
+compile 'com.tikou:seekbarwithinstruct:1.0.0'
 ```
 
 ## 2.使用方式参数说明

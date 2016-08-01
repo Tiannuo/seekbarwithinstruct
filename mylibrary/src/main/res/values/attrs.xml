@@ -5,9 +5,10 @@
         <attr name="numbackground" format="reference"/>
         <attr name="numTextSize" format="dimension"/>
         <attr name="numTextColor" format="color"/>
-        <attr name="numType">
-            <enum name="top" value="0"/>
-            <enum name="bottom" value="1"/>
+        <attr name="numScale" format="string"/>
+        <attr name="numType" format="enum">
+            <enum name="top" value="48"/>
+            <enum name="bottom" value="80"/>
         </attr>
 
     </declare-styleable>

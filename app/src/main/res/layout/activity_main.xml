@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:custom="http://schemas.android.com/apk/res-auto"
-
+    android:orientation="vertical"
     tools:context="com.tikou.seekbarwithinstruct.MainActivity">
 
     <com.tikou.mylibrary.UiSeeKBar
@@ -13,11 +13,26 @@
         android:layout_height="wrap_content"
         android:progressDrawable="@drawable/seek"
         android:maxHeight="20px"
-        android:thumb="@drawable/year_line_lv_03"
-        custom:numbackground="@drawable/shows"
+        android:thumb="@drawable/seek_instrucrt"
+        custom:numbackground="@mipmap/qqshow"
+        custom:numType="top"
+        custom:numTextColor="#FFFFFF"
+        custom:numScale="0.16"
+        />
+
+    <com.tikou.mylibrary.UiSeeKBar
+        android:layout_marginTop="50dp"
+        android:id="@+id/ui_seekbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progressDrawable="@drawable/seek"
+        android:maxHeight="20px"
+        android:thumb="@drawable/seek_instrucrt"
+        custom:numbackground="@mipmap/qqshow_2"
         custom:numType="bottom"
+        custom:numTextColor="#FFFFFF"
+        custom:numScale="0.16"
         />
 
 
-
-</RelativeLayout>
+</LinearLayout>

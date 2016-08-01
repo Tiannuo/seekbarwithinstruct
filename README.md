@@ -9,6 +9,7 @@ QQ： 1320917731
 
 
 演示
+![image](https://github.com/Tiannuo/seekbarwithinstruct/blob/master/app/src/main/java/com/tikou/seekbarwithinstruct/showsample.gif)
 
 
 ## 1.用法

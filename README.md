@@ -13,7 +13,7 @@ QQ： 1320917731
 
 
 ## 1.用法
-Android studio在gradle可以选择添加或者copy源码：
+Android studio在gradle可以选择添加或者copy源码（Api>15）：
 
 
 ```java

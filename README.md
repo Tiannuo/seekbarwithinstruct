@@ -21,7 +21,7 @@ compile 'com.tikou:seekbarwithinstruct:1.0.0'
 ```
 
 ## 2.使用方式参数说明
-目前numbackground高度大于progressdrawble 高度
+目前thum高度必须大于progressdrawble 高度
 ## Attributes
 | name | format | description |
 | -----|:----:| ----:|

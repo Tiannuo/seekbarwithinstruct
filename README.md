@@ -30,5 +30,6 @@ compile 'com.tikou:seekbarwithinstruct:1.0.0'
 | numTextColor    | color    |   设置指示器内部文字的颜色  |
 | numScale    | string    |   设置指示器背景资源文件的箭头和整个图片高的的比例如0.2  |
 | numType    | enum    |   设置指示器在seekbar的上面还是下面  |
+| numTextFormat    | string    |   设置指示器内部文字的后缀格式，默认是%，如20%，输入"元"，就是20元  |
 
 

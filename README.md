@@ -34,22 +34,6 @@ compile 'com.tikou:seekbarwithinstruct:1.0.0'
         custom:numTextFormat="元"
         />
 
-    <com.tikou.mylibrary.UiSeeKBar
-        android:layout_marginTop="50dp"
-        android:id="@+id/ui_seekbar2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:progressDrawable="@drawable/seek"
-        android:maxHeight="20px"
-        android:thumb="@drawable/seek_instrucrt"
-        custom:numbackground="@mipmap/qqshow_2"
-        custom:numType="bottom"
-        custom:numTextColor="#FFFFFF"
-        android:splitTrack="false"
-        />
-
-
-
 ## 2.使用方式参数说明
 目前thum高度必须大于progressdrawble 高度
 ## Attributes

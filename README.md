@@ -19,6 +19,22 @@ Android studio在gradle可以选择添加或者copy源码（Api>15）：
 compile 'com.tikou:seekbarwithinstruct:1.0.0'
 ```
 引入布局
+
+    <com.tikou.mylibrary.UiSeeKBar
+        android:id="@+id/ui_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progressDrawable="@drawable/seek"
+        android:maxHeight="20px"
+        android:thumb="@drawable/seek_instrucrt"
+        custom:numbackground="@mipmap/qqshow"
+        custom:numType="top"
+        custom:numTextColor="#FFFFFF"
+        custom:numScale="0.16"
+        android:splitTrack="false"
+        custom:numTextFormat="元"
+        />
+
      <com.tikou.mylibrary.UiSeeKBar
         android:id="@+id/ui_seekbar"
         android:layout_width="match_parent"

@@ -15,10 +15,40 @@ QQ： 1320917731
 ## 1.用法
 Android studio在gradle可以选择添加或者copy源码（Api>15）：
 
-
 ```java
 compile 'com.tikou:seekbarwithinstruct:1.0.0'
 ```
+引入布局
+     <com.tikou.mylibrary.UiSeeKBar
+        android:id="@+id/ui_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progressDrawable="@drawable/seek"
+        android:maxHeight="20px"
+        android:thumb="@drawable/seek_instrucrt"
+        custom:numbackground="@mipmap/qqshow"
+        custom:numType="top"
+        custom:numTextColor="#FFFFFF"
+        custom:numScale="0.16"
+        android:splitTrack="false"
+        custom:numTextFormat="元"
+        />
+
+    <com.tikou.mylibrary.UiSeeKBar
+        android:layout_marginTop="50dp"
+        android:id="@+id/ui_seekbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progressDrawable="@drawable/seek"
+        android:maxHeight="20px"
+        android:thumb="@drawable/seek_instrucrt"
+        custom:numbackground="@mipmap/qqshow_2"
+        custom:numType="bottom"
+        custom:numTextColor="#FFFFFF"
+        android:splitTrack="false"
+        />
+
+
 
 ## 2.使用方式参数说明
 目前thum高度必须大于progressdrawble 高度
